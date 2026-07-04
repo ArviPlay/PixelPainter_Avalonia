@@ -14,7 +14,7 @@
             <Label HorizontalAlignment="Center" Margin="0,0,0,10">PixelPainter</Label>
             <Label HorizontalAlignment="Center" x:Name="FilePathLabel"></Label>
             <Button HorizontalAlignment="Center" Margin="0,0,0,10" Click="OnChooseFile">Choose file</Button>
-            <CheckBox HorizontalAlignment="Center" Margin="0,0,0,10">Invert image</CheckBox>
+            <CheckBox HorizontalAlignment="Center" Margin="0,0,0,10" x:Name="InvertCheckBox">Invert image</CheckBox>
             <Label HorizontalAlignment="Center">Threshold</Label>
             <TextBox HorizontalAlignment="Center" Text="128" TextAlignment="Center" Margin="0,0,0,10"></TextBox>
             <Label HorizontalAlignment="Center">Between clicks delay</Label>
