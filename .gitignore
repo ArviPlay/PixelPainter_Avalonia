@@ -1,0 +1,32 @@
+## --- .NET & Visual Studio Core ---
+[Bb]in/
+[Oo]bj/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## --- Avalonia & IDE Tooling ---
+.avalonia/
+.vs/
+.idea/
+*.lscache
+
+## --- Mobile Platforms (Android / iOS) ---
+# Android
+*.apk
+*.aar
+*.ap_
+*.dex
+# iOS
+*.app
+*.ipa
+*. dSYM/
+
+## --- WebAssembly (WASM) ---
+dist/
+wwwroot/compressed/
+
+## --- Operating System Files ---
+.DS_Store
+Thumbs.db
