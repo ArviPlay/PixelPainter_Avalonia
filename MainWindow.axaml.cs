@@ -1,3 +1,4 @@
+using System.Globalization;
 using Avalonia.Controls;
 using Avalonia.Platform.Storage;
 
@@ -31,5 +32,13 @@ public partial class MainWindow : Window
             var fullPath = files[0].Path.LocalPath;
             FilePathLabel.Content = fullPath;
         }
+    }
+
+    private void OnStart(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        string filePath = FilePathLabel.Content?.ToString();
+        bool invert = InvertCheckBox.IsChecked == true;
+        int threshold = int.Parse(ThresholdTextBox.Text);
+        double delay = double.Parse(DelayTextBox.Text, CultureInfo.InvariantCulture);
     }
 }

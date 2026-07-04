@@ -23,7 +23,7 @@
             <Button HorizontalAlignment="Center" Margin="0,0,0,10" x:Name="SelectAreaButton">Select area</Button>
         </StackPanel>
         
-        <Button HorizontalAlignment="Center" DockPanel.Dock="Bottom" Margin="10" x:Name="StartButton">Start</Button>
+        <Button HorizontalAlignment="Center" DockPanel.Dock="Bottom" Margin="10" x:Name="StartButton" Click="OnStart">Start</Button>
     </DockPanel>
     
 </Window>
