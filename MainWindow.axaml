@@ -13,17 +13,17 @@
         <StackPanel DockPanel.Dock="Top">
             <Label HorizontalAlignment="Center" Margin="0,0,0,10">PixelPainter</Label>
             <Label HorizontalAlignment="Center" x:Name="FilePathLabel"></Label>
-            <Button HorizontalAlignment="Center" Margin="0,0,0,10" Click="OnChooseFile">Choose file</Button>
+            <Button HorizontalAlignment="Center" Margin="0,0,0,10" Click="OnChooseFile" x:Name="ChooseFileButton">Choose file</Button>
             <CheckBox HorizontalAlignment="Center" Margin="0,0,0,10" x:Name="InvertCheckBox">Invert image</CheckBox>
             <Label HorizontalAlignment="Center">Threshold</Label>
-            <TextBox HorizontalAlignment="Center" Text="128" TextAlignment="Center" Margin="0,0,0,10"></TextBox>
+            <TextBox HorizontalAlignment="Center" Text="128" TextAlignment="Center" Margin="0,0,0,10" x:Name="ThresholdTextBox"></TextBox>
             <Label HorizontalAlignment="Center">Between clicks delay</Label>
-            <TextBox HorizontalAlignment="Center" Text="0.003" TextAlignment="Center" Margin="0,0,0,10"></TextBox>
+            <TextBox HorizontalAlignment="Center" Text="0.003" TextAlignment="Center" Margin="0,0,0,10" x:Name="DelayTextBox"></TextBox>
             <Label HorizontalAlignment="Center" Margin="10"></Label>
-            <Button HorizontalAlignment="Center" Margin="0,0,0,10">Select area</Button>
+            <Button HorizontalAlignment="Center" Margin="0,0,0,10" x:Name="SelectAreaButton">Select area</Button>
         </StackPanel>
         
-        <Button HorizontalAlignment="Center" DockPanel.Dock="Bottom" Margin="10">Start</Button>
+        <Button HorizontalAlignment="Center" DockPanel.Dock="Bottom" Margin="10" x:Name="StartButton">Start</Button>
     </DockPanel>
     
 </Window>
